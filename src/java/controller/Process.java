@@ -74,7 +74,7 @@ public class Process extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        try {
+        
             String name = request.getParameter("name");
             String phone = request.getParameter("phone");
             String gender = request.getParameter("gender");
@@ -85,7 +85,7 @@ public class Process extends HttpServlet {
             students.add(student);
             String mess = "";
             if (students != null) {
-                mess = "Submit successfully !";
+                mess = "Submit Successfully !";
                 request.setAttribute("mess", mess);
             } else {
                 mess = "Submit failed !";
@@ -93,9 +93,9 @@ public class Process extends HttpServlet {
             }
 
             request.getRequestDispatcher("Home.jsp").forward(request, response);
-        } catch (IOException e) {
+     
 
-        }
+        
     }
 
     /**

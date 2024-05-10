@@ -22,7 +22,7 @@
                     <h1>Student form</h1>
                     <div class="coolinput">
                         <label for="input" class="text">Name:</label>
-                        <input type="text" placeholder="Write here..." name="name" class="input">
+                        <input type="text" placeholder="Write here..." name="name" class="input" >
                     </div>
                     <div class="coolinput">
                         <label for="input" class="text">Phone Number:</label>
@@ -41,7 +41,7 @@
                         <input type="text" placeholder="Write here..." name="major" class="input">
                     </div>
 
-                    <input type="button" class="button" value="Submit">
+                    <input type="submit" class="button" value="Submit">
                 </div>
              <%  if(request.getAttribute("mess")!=null){ 
                    String mess=(String) request.getAttribute("mess");
